@@ -1,0 +1,288 @@
+/* Start General Rules */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button{cursor: pointer;}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+/* End General Rules */
+
+/* Start Header */
+.header{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 56px;   
+    z-index: 3;
+    background: #fff;
+}
+
+.container-fluid{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.row-header, .logo-and-burger{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-and-burger .btn-burger{
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px;
+}
+.logo-and-burger{
+   gap: 20px;
+}
+
+.logo-main{
+   width: 97px;
+}
+.logo-main svg{
+   width: 100%;
+}
+
+.search-header-control{
+    display: flex;
+    gap: 15px;
+}
+
+.form-search-control{
+    width: 536px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.form-search-control input{
+    width: 100%;
+    height: 100%;
+    border: none !important;
+    outline: none !important;
+    flex-grow: 1;
+    padding: 5px 15px;
+}
+.form-search-control button{
+    height: 100%;
+    width: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    border: none;
+    outline: none;
+}
+
+.form-search-control button svg{
+    width: 24px;
+}
+
+.search-v-contorls .search-voice{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    border-radius: 50%;
+}
+
+.user-control-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-control-list .create-vd,
+.user-control-list .notifications-list {
+    display: flex;
+    width: 40px;
+    padding: 8px;
+}
+
+/* .user-control .create-vd svg,
+.user-control .notifications-list svg {
+    width: 24px;
+} */
+
+.user-control .user-settings {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    overflow: none;
+}
+
+.user-control .user-settings img {
+    width: 100%;
+    border-radius: 50%;
+}
+/* End Header */
+
+/* Start aside */
+.aside{
+    width: 240px;
+    height: calc(100% - 56px);
+    position: fixed;
+    left: 0;
+    top: 56px;
+    z-index: 3;
+}
+
+.aside .container {
+    padding: 10px;
+}
+
+.aside ul {
+    padding: 7px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.aside ul li {
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.aside ul a {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: capitalize;
+    color: #000;
+    border-radius: 10px;
+}
+
+.aside ul a:hover {
+    background-color: #eee;
+}
+
+.aside .svg-holder {
+    display: flex;
+    width: 40px;
+    padding: 8px;
+}
+
+.aside .svg-holder svg {
+    width: 100%;
+}
+
+aside .list2 li:first-of-type a {
+    gap: 0;
+} 
+
+.list2-span {
+    padding: 8px;
+    font-size: 19px;
+}
+
+aside .list2 li:first-of-type a .svg-holder {
+    /* padding: 10px 15px 10px 0; */
+    width: 32px;
+    margin-left: -5px;
+} 
+/* End aside */
+
+/* Start Section */
+.section{
+    width: 100%;
+    /* min-width: calc(100% - 907px); */
+    min-height: calc(100vh - 56px);
+    padding-top: 56px;
+    padding-left: 240px;
+}
+
+.section .content{
+    /* height: 200px; */
+    width: 24%;
+    /* max-width: 250px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: rgb(0, 0, 0); */
+    /* color: #fff; */
+    margin-bottom: 10px ;
+}
+
+.section .card {
+    /* display: inline-flex; */
+    /* flex-direction: column; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.card .card-video {
+    width: 390px;
+    height: 220px;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.card .card-video img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+.card .info {
+    display: flex;
+    flex-direction: row;
+}
+
+.card .info .channel-logo {
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+}
+
+.card .info .channel-logo image {
+    border-radius: 50%;
+}
+
+.card .info .channel-data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card .channel-data h4 {
+    display: flex;
+    font-size: 16px !important;
+    color: #0f0f0f !important;
+}
+
+.card .channel-data a {
+    font-size: 14px !important;
+    color: #606060 !important;
+}
+
+.card .channel-data div {
+    font-size: 14px !important;
+    color: #606060 !important;
+}
+/* End Section */
+
